@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    background-color: #f4f3ee;
+    color: #090909;
+    line-height: 1.5;
+  }
+
+
+.pic-right {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: flex-start;
+    max-width: 1400px;
+    margin: auto;
+    
+
+}
+
+h1 {
+    text-align: center;
+    font-family: Valverde, Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+
+
+
+  
+  .content-width {
+    max-width: 70ch;
+    width: calc(100% - 4rem);
+    margin: 0 auto;
+  }
+  
+  main {
+    margin-bottom: 4rem;
+  }
+  
+  header {
+    margin-bottom: 4rem;
+    padding: 2rem 0;
+    background-color: hsl(280, 50%, 40%);
+    border-bottom: 4px solid hsl(300, 50%, 50%);
+    color: hsl(300, 50%, 90%);
+  }
+  
+  header p {
+    color: hsl(300, 50%, 85%);
+  }
+  
+  h1, h2, h3 {
+    margin: 0;
+    line-height: 1.25;
+  }
+  
+  h2, h3 {
+    color: hsl(280, 50%, 40%)
+  }
