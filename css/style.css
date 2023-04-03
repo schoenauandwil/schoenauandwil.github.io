@@ -1,10 +1,388 @@
-body {
-    margin: 0;
-    background-color: #f4f3ee;
-    color: #090909;
-    line-height: 1.5;
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-BoldItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-BoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BoldItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BoldItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BoldItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BoldItalic.svg#Jost-BoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBold.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBold.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBold.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBold.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBold.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBold.svg#Jost-ExtraBold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Black.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Black.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Black.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Black.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Black.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Black.svg#Jost-Black') format('svg');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Bold.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Bold.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Bold.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Bold.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Bold.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Bold.svg#Jost-Bold') format('svg');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-BlackItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-BlackItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BlackItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BlackItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BlackItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-BlackItalic.svg#Jost-BlackItalic') format('svg');
+  font-weight: 900;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Medium.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Medium.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Medium.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Medium.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Medium.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Medium.svg#Jost-Medium') format('svg');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-LightItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-LightItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-LightItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-LightItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-LightItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-LightItalic.svg#Jost-LightItalic') format('svg');
+  font-weight: 300;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Light.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Light.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Light.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Light.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Light.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Light.svg#Jost-Light') format('svg');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Italic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Italic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Italic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Italic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Italic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Italic.svg#Jost-Italic') format('svg');
+  font-weight: normal;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBold.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBold.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBold.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBold.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBold.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBold.svg#Jost-SemiBold') format('svg');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Regular.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Regular.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Regular.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Regular.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Regular.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Regular.svg#Jost-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ThinItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ThinItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ThinItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ThinItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ThinItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ThinItalic.svg#Jost-ThinItalic') format('svg');
+  font-weight: 100;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Thin.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-Thin.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Thin.woff2') format('woff2'),
+      url('schoenau-andwil/res/fonts/Jost/Jost-Thin.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Thin.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-Thin.svg#Jost-Thin') format('svg');
+  font-weight: 100;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBoldItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBoldItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBoldItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBoldItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraBoldItalic.svg#Jost-ExtraBoldItalic') format('svg');
+  font-weight: bold;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLight.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLight.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLight.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLight.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLight.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLight.svg#Jost-ExtraLight') format('svg');
+  font-weight: 200;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLightItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLightItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLightItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLightItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLightItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-ExtraLightItalic.svg#Jost-ExtraLightItalic') format('svg');
+  font-weight: 200;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBoldItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBoldItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBoldItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBoldItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBoldItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-SemiBoldItalic.svg#Jost-SemiBoldItalic') format('svg');
+  font-weight: 600;
+  font-style: italic;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Jost';
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-MediumItalic.eot');
+  src: url('/schoenau-andwil/res/fonts/Jost/Jost-MediumItalic.eot?#iefix') format('embedded-opentype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-MediumItalic.woff2') format('woff2'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-MediumItalic.woff') format('woff'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-MediumItalic.ttf') format('truetype'),
+      url('/schoenau-andwil/res/fonts/Jost/Jost-MediumItalic.svg#Jost-MediumItalic') format('svg');
+  font-weight: 500;
+  font-style: italic;
+  font-display: swap;
+}
+
+
+:root {
+  --solitary-star: #f3ebd6;
+  --pinkish-beige: #cdb5a7;
+  --sandalwood: #cda890;
+  --tiramisu: #644235;
+  --seal-brown: #5c4738;
+  --black-bean: #2c2929;
+}
+
+
+
+/* Setup for respsonsive design*/
+* {
+  box-sizing: border-box;
+}
+
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+/* Mobile First */
+.flex-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+
+/*
+[class*="col-"] {
+  width: 100%;
+  float: left;
+  padding: 15px;
+  border: 1px solid red;
+}
+
+ h1 {
+    font-size: 10pt;
   }
 
+  img {
+    max-width: 90vw;
+    height: auto;
+    justify-content: center;
+    align-content: center;
+  }
+ 
+
+
+@media only screen and (min-width: 600px) {
+  /* For Tablets */
+  /*
+  .col-s-1 {width: 8.33%;}
+  .col-s-2 {width: 16.66%;}
+  .col-s-3 {width: 25%;}
+  .col-s-4 {width: 33.33%;}
+  .col-s-5 {width: 41.66%;}
+  .col-s-6 {width: 50%;}
+  .col-s-7 {width: 58.33%;}
+  .col-s-8 {width: 66.66%;}
+  .col-s-9 {width: 75%;}
+  .col-s-10 {width: 83.33%;}
+  .col-s-11 {width: 91.66%;}
+  .col-s-12 {width: 100%;}
+
+}
+
+@media only screen and (min-width: 768px) {
+  /* For Desktop */
+/*
+  .col-m-1 {width: 8.33%;}
+  .col-m-2 {width: 16.66%;}
+  .col-m-3 {width: 25%;}
+  .col-m-4 {width: 33.33%;}
+  .col-m-5 {width: 41.66%;}
+  .col-m-6 {width: 50%;}
+  .col-m-7 {width: 58.33%;}
+  .col-m-8 {width: 66.66%;}
+  .col-m-9 {width: 75%;}
+  .col-m-10 {width: 83.33%;}
+  .col-m-11 {width: 91.66%;}
+  .col-m-12 {width: 100%;}
+}
+
+@media only screen and (min-width: 1280px) {
+  /* For big screens */
+/*
+  .col-l-1 {width: 8.33%;}
+  .col-l-2 {width: 16.66%;}
+  .col-l-3 {width: 25%;}
+  .col-l-4 {width: 33.33%;}
+  .col-l-5 {width: 41.66%;}
+  .col-l-6 {width: 50%;}
+  .col-l-7 {width: 58.33%;}
+  .col-l-8 {width: 66.66%;}
+  .col-l-9 {width: 75%;}
+  .col-l-10 {width: 83.33%;}
+  .col-l-11 {width: 91.66%;}
+  .col-l-12 {width: 100%;}
+}
+
+*/
+
+
+.content-wrapper {
+  padding: 0px 10px 40px 10px /*  into 50,35,70,35 into 50, 60, 120, 60*/
+}
+
+
+body {
+  background-color: var(--solitary-star);
+  color: var(--black-bean);
+  font-family: 'Jost', Verdana, Geneva, Tahoma, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: large;
+}
+
+
+h1 {
+  font-size:200%;
+  font-weight: 600;
+}
+
+.center {
+  text-align: center;
+}
+
+.light {
+  font-weight: 300;
+  font-size:80%;
+}
+
+h2 {
+  color:var(--black-bean);
+  margin-bottom: 0em;
+}
+
+
+img {
+    width: 100%;
+  }
+
+footer {
+    background-color: var(--tiramisu);
+    color: var(--solitary-star);
+    
+  }
 
 .pic-right {
     display: flex;
@@ -13,48 +391,4 @@ body {
     align-items: flex-start;
     max-width: 1400px;
     margin: auto;
-    
-
 }
-
-h1 {
-    text-align: center;
-    font-family: Valverde, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-
-
-
-
-
-  
-  .content-width {
-    max-width: 70ch;
-    width: calc(100% - 4rem);
-    margin: 0 auto;
-  }
-  
-  main {
-    margin-bottom: 4rem;
-  }
-  
-  header {
-    margin-bottom: 4rem;
-    padding: 2rem 0;
-    background-color: hsl(280, 50%, 40%);
-    border-bottom: 4px solid hsl(300, 50%, 50%);
-    color: hsl(300, 50%, 90%);
-  }
-  
-  header p {
-    color: hsl(300, 50%, 85%);
-  }
-  
-  h1, h2, h3 {
-    margin: 0;
-    line-height: 1.25;
-  }
-  
-  h2, h3 {
-    color: hsl(280, 50%, 40%)
-  }
