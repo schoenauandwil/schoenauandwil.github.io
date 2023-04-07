@@ -4,7 +4,8 @@
     <link rel="stylesheet" href="css/style.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Adapt margins for landscape mode on iPhone bc of Notch! -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
     <title>Schönau Andwil
     </title>
 </head>
@@ -13,18 +14,17 @@
 
 <main>
     <div class="content-wrapper">
-        <!--Introduction/Herzlich Willkommen-->
-        <div>
-            <h1 class="center">Herzlich Willkommen bei uns in der Schönau Andwil</h1>
+        <div class="section-wrapper light-bg">
+            <!-- <h1 class="center">Herzlich Willkommen bei uns in der Schönau Andwil</h1> -->
+            <img src="res/img/schoenau_andwil_logo_nobg.png" alt="Logo" class="logo">
             <p class="center">Ob Kafi-Gipfeli, Brunch, Bankett oder Anlässe gemäss Ihren Wünschen - bei uns finden Sie, was Ihr Herz begehrt.</p>
-            <p class="light center">Mo-Fr: 8.30 - 11.30 & 14.00 - 17.00 | Sa: 7.30 - 11.30</p></p>
+            <div class="opening-hours-wrapper">
+                <p class="light center">Mo-Fr: 8.30 - 11.30 & 14.00 - 17.00 | Sa: 7.30 - 11.30</p>
+            </div>
         </div>
 
-
-        
-    
-        <!-- Klassisches gelaber über das Kaffee selbst-->
-        <section>
+       
+        <section class="section-wrapper dark-bg">
             <div>
                 <h2>Café</h2>
                 <p>Entspannen Sie sich bei Heissgetränk und hausgemachtem Gebäck und entfliehen Sie Ihrem Alltag. Gerne heissen wir Sie in unserem Café oder in unserer Gartenwirtschaft willkommen.</p>
@@ -38,55 +38,66 @@
         </section>
     
         <!-- Öffnungszeiten-->
-        <section>
-            <h2>Öffnungszeiten</h2>
-            <p>Montag bis Freitag: 8.30 - 11.30 & 14.00 - 17.00 <br> Samstag: 7.30 - 11.30</p>
+        <!--
+        <section class="section-wrapper">
+            <div>
+                <h2>Öffnungszeiten</h2>
+                <p>Montag bis Freitag: 8.30 - 11.30 & 14.00 - 17.00 <br> Samstag: 7.30 - 11.30</p>
+            </div>
         </section>
-    
-        <!-- Extra Angebote-->
-        <section>
+        -->
+        
+        <section class="section-wrapper light-bg">
             <div>
                 <h2>Anlässe</h2>
                 <p>Ob Vereinsbrunch oder Geschäftsessen: Gerne unterstützen wir Sie in der Vorbereitung und organisieren Anlässe ab 10 Personen gemäss Ihren Wünschen und Vorstellungen.</p>
             </div>
             <div>
-                <img src="res/img/canape.jpg" alt="Canapes">
+                <img src="res/img/canape_klein.jpg" alt="Canapes">
             </div>
             
         </section>
     
-        <section>
+        <section class="section-wrapper dark-bg">
             <div>
                 <h2>Auf Bestellung</h2>
                 <p>Auf Bestellung verwöhnen wir Sie gerne mit Meterbroten, Riesenbrezeln, hausgemachten Desserts und Apéro-Gebäck.</p>    
             </div>
             <div>
-                <img src="res/img/dessert.jpg" alt="Desserts">
+                <img src="res/img/dessert_klein.jpg" alt="Desserts">
             </div>
         </section>
     
-        <section>
+        <section class="section-wrapper light-bg">
             <h2>Fotodruck auf Esspapier</h2>
             <p>Geben Sie Ihrem Gebäck eine persönliche Note: Gerne bedrucken wir für Sie Torten oder Biber mit Ihrem Foto auf Esspapier. Ideal für Geburtstage, Jubiläen oder als Werbegeschenk.</p>
         </section>
     
-        <!-- Kontakt-->
-        <div>
-    
-        </div>
+        <!-- Kontaktformular? -->
     </div>
 </main>
 
 
 <footer>
-    <div>
-        <p>Hello Footer</p>
+    <div class="footer-wrapper">
+        <div>
+            <h3>Kontakt</h3>
+            <p>
+                Schönau Andwil<br>
+                Irene Rutz<br>
+                Arneggerstrasse 8<br>
+                9204 Andwil<br>
+                Tel. +41 71 554 42 01<br>
+                <!-- Subject? Content? -->
+                <a href="mailto:schoenau.9204andwil@gmail.com?subject=Kontaktanfrage Schoenau   Andwil">schoenau.9204andwil@gmail.com</a>
+            </p>
+        </div>
+        <div>
+            <h3>Öffnungszeiten</h3>
+            <p>Mo-Fr: 8.30 - 11.30 & 14.00 - 17.00<br>Sa: 7.30 - 11.30</p>
+        </div>
     </div>
 </footer>
-
-
-
-
-
 </body>
+
 </html>
