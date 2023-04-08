@@ -41,6 +41,18 @@ footer {
   text-align: center;
 }
 
+.v-space-s {
+  height: 2vh;
+}
+
+.v-space-m {
+  height: 4vh;
+}
+
+.v-space-l {
+  height: 8vh;
+}
+
 /* Text */
 
 h1 {
@@ -48,18 +60,27 @@ h1 {
   font-weight: 600;
 }
 
-
 h2 {
-  margin-bottom: 10px;
+  margin-bottom: 1vh;
 }
 
 h3 {
-  margin-bottom: 5px;
+  font-size: 125%;
+  padding-bottom: 1vh;
 }
 
 .light {
   font-weight: 300;
   font-size: 80%;
+}
+
+.mini-title {
+  font-weight: 500;
+  font-size: 105%;
+}
+
+.main-text {
+  margin: 0 0 3vh 0;
 }
 
 a {
@@ -76,26 +97,37 @@ img {
 
 .logo {
   max-width: 500px;
+  align-items: center;
 }
 
 
 /* Wrappers */
 
-.opening-hours-wrapper {
-  padding: 2vh 0 0 0;
-}
 
 .section-wrapper {
-  padding: 2vh 3vw 6vh 3vw;
+  padding: 6vh 4vw 6vh 4vw;
 }
 
-.content-wrapper {
-
+.title-wrapper {
+  display: flex;
+  flex-direction: column;
+  padding: 6vh 4vw 6vh 4vw;
+  row-gap: 2vh;
+  text-align: center;
 }
 
 .footer-wrapper {
   display: flex;
   flex-direction: column;
+  row-gap: 8vh;
+  padding: 8vh 0;
+  text-align: center;
+}
+
+.footer-entry-wrapper {
+  display: flex;
+  flex-direction: column;
+  row-gap: 2vh;
 }
 
 
@@ -105,6 +137,7 @@ img {
   /* For Tablets */
   .footer-wrapper {
     flex-direction: row;
+    justify-content: space-evenly;
   }
 }
 
