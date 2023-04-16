@@ -41,23 +41,12 @@ footer {
   text-align: center;
 }
 
-.v-space-s {
-  height: 2vh;
-}
-
-.v-space-m {
-  height: 4vh;
-}
-
-.v-space-l {
-  height: 8vh;
-}
-
 /* Text */
 
 h1 {
   font-size:200%;
   font-weight: 600;
+  margin-bottom: 3vh;
 }
 
 h2 {
@@ -67,6 +56,10 @@ h2 {
 h3 {
   font-size: 125%;
   padding-bottom: 1vh;
+}
+
+.main-text {
+  font-size: 90%;
 }
 
 .light {
@@ -83,6 +76,7 @@ h3 {
   margin: 0 0 3vh 0;
 }
 
+
 a {
   color: var(--solitary-star);
 }
@@ -96,16 +90,39 @@ img {
 }
 
 .logo {
-  max-width: 500px;
+  width: 80vw;
+  max-width: 750px;
   align-items: center;
 }
 
 
+.opening-hours-wrapper{
+  display: flex;
+  flex-direction: column;
+  gap: 1vh;
+}
+.invis-on-column{
+  display: none;
+}
+
 /* Wrappers */
 
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+}
 
-.section-wrapper {
+
+[class|="section-wrapper"] {
+  display: flex;
+  flex-direction: column;
   padding: 6vh 4vw 6vh 4vw;
+  gap: 3vh;
+
+  min-height: 40vh;
+  align-items: center;
+  justify-content: center;
+
 }
 
 .title-wrapper {
@@ -135,15 +152,68 @@ img {
 
 @media only screen and (min-width: 600px) {
   /* For Tablets */
+  .content-wrapper {
+    gap: 100px;
+  }
+
+  [class$="text"]{
+    font-size: 130%;
+  }
+
+  h1 {
+    font-size: 300%;
+  }
+
+  .light {
+    font-size: 100%;
+  }
+  
+}
+
+@media only screen and (orientation: landscape){
+
+  .logo {
+    width: 40vw;
+  }
+
+  .invis-on-column {
+    display: block; 
+  }
+
+  .opening-hours-wrapper {
+    flex-direction: row;
+    gap: 2vw;
+    justify-content: center;
+  }
+
+
+  .footer-wrapper{
+    flex-direction: row;
+  }
+
   .footer-wrapper {
     flex-direction: row;
     justify-content: space-evenly;
   }
-}
 
-@media only screen and (orientation: landscape){
-  .footer-wrapper{
+  .section-wrapper-right{
     flex-direction: row;
+    /* height: 110vh; */
+    /*justify-content: space-evenly;*/
+  }
+
+  .section-wrapper-left {
+    flex-direction: row-reverse;
+    /* height: 110vh; */
+    /*justify-content: space-evenly;*/
+  }
+
+  .main-text-wrapper {
+    flex: 40%
+  }
+
+  .main-image-wrapper {
+    flex: 60%
   }
 }
 
