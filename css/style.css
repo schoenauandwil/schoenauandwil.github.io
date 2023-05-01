@@ -158,10 +158,17 @@ img {
 }
 
 .opening-hours-wrapper{
-  margin: 1vh 0 5vh 0;
+  margin: 1vh 0 2vh 0;
   display: flex;
   flex-direction: column;
   gap: 1vh;
+  font-size: 80%;
+}
+
+.opening-info-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5vh;
   font-size: 80%;
 }
 
@@ -185,6 +192,7 @@ img {
   flex-direction: column;
   row-gap: 2vh;
 }
+
 
 
 /* Media Queries*/
@@ -228,6 +236,8 @@ img {
     text-align: center;
   }
 }
+
+
 
 
 
